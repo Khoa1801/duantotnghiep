@@ -1,0 +1,122 @@
+/* Container chính */
+.category-container {
+    text-align: center;
+    padding: 50px 30px;
+    background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);  /* Added shadow for depth */
+    margin-bottom: 50px;
+}
+
+/* Tiêu đề danh mục */
+.category-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;  /* Increased spacing for a more sophisticated look */
+    color: #333;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Added text shadow for effect */
+}
+
+/* Lưới danh mục */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Adjusted min-width for better grid structure */
+    gap: 30px;
+    padding: 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Thẻ danh mục */
+.category-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);  /* Stronger shadow for more impact */
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-card img {
+    width: 100%;
+    height: 200px;  /* Increased image height for more visual impact */
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease;
+    border-radius: 15px 15px 0 0; /* Rounded corners for the top of the image */
+}
+
+/* Hiệu ứng gradient overlay */
+.category-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);  /* Darker gradient */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 15px 15px 0 0;  /* Match rounded corners */
+}
+
+/* Tiêu đề của thẻ danh mục */
+.category-card h3 {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #444;
+    transition: color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+/* Hover effect */
+.category-card:hover {
+    transform: translateY(-10px);  /* Slightly stronger lift on hover */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);  /* Stronger shadow on hover */
+}
+
+.category-card:hover img {
+    transform: scale(1.1);  /* Increased zoom effect */
+    opacity: 0.9;  /* Slight fade effect */
+}
+
+.category-card:hover::before {
+    opacity: 1;
+}
+
+.category-card:hover h3 {
+    color: #f39c12;  /* Golden accent on hover */
+    transform: translateY(-5px);  /* Add subtle animation to title */
+}
+
+/* Loading & Error */
+.loading, .error-message, .no-category {
+    font-size: 20px;
+    font-weight: 700;
+    color: #666;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f3f3f3;  /* Light background for emphasis */
+    border-radius: 8px;
+    border: 2px solid #ddd;  /* Border to make the messages stand out */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* Better layout on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .category-grid {
+        grid-template-columns: 1fr;  /* Single column for mobile devices */
+    }
+}

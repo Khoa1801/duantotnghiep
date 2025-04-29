@@ -1,0 +1,145 @@
+/* Chat icon */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+.chat-icon:hover {
+  background-color: #357abd;
+}
+
+/* Chat box container */
+.chat-box {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 320px;
+  max-height: 500px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideUp 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Slide up animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Chat box header */
+.chat-box h2 {
+  margin: 0;
+  padding: 15px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* User info */
+.user-info {
+  padding: 10px 15px;
+  background-color: #f7f9fc;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Message list */
+.messages {
+  flex: 1;
+  padding: 10px 15px;
+  overflow-y: auto;
+  font-size: 14px;
+  background-color: #fafafa;
+}
+
+.messages ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.messages li {
+  background-color: #e6f0ff;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.messages li strong {
+  color: #2a5db0;
+}
+
+.messages small {
+  display: block;
+  font-size: 11px;
+  color: #777;
+  margin-top: 4px;
+}
+
+/* Form to send message */
+.send-message {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.send-message textarea {
+  resize: none;
+  height: 60px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: inherit;
+  margin-bottom: 8px;
+}
+
+.send-message button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.send-message button:hover {
+  background-color: #357abd;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  padding: 10px 15px;
+  font-size: 13px;
+  background-color: #ffe6e6;
+  border-bottom: 1px solid #f5c2c2;
+}

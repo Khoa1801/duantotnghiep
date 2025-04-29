@@ -1,0 +1,104 @@
+.order-page.l1 {
+    background-color: #1e1e2f;
+    color: #fff;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  
+  .title.l1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tab-buttons.l1 {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tab-button.l1 {
+    background-color: #333;
+    color: #ccc;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .tab-button.l1.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .order-table.l1 table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2a2a3d;
+  }
+  
+  .order-table.l1 th, .order-table.l1 td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #444;
+    text-align: left;
+  }
+  
+  .status.l1.da_giao {
+    color: lightgreen;
+  }
+  
+  .status.l1.dang_xu_ly {
+    color: yellow;
+  }
+  
+  .status.l1.cho_xu_ly {
+    color: orange;
+  }
+  
+  .status.l1.da_huy {
+    color: red;
+  }
+  
+  .action-buttons.l1 .btn {
+    margin-right: 0.5rem;
+    padding: 0.4rem 0.75rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .btn.l1.confirm {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn.l1.delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .modal-overlay.l1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .order-modal.l1 {
+    background-color: #333;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 400px;
+  }
+  
+  .btn.l1.close {
+    margin-top: 1rem;
+    background-color: #dc3545;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+  }
+  

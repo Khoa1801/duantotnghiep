@@ -1,0 +1,114 @@
+
+
+/* Khuyến mãi container */
+.khuyenmai-container {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://taru.vn/image/category-img/giaythethao-nam.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+/* Overlay for content */
+.khuyenmai-overlay {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+}
+
+/* Title for the promotion */
+.khuyenmai-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #f0a500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  animation: title-animate 1.5s ease-in-out;
+}
+
+/* Subtitle for the promotion */
+.khuyenmai-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  animation: subtitle-animate 2s ease-in-out;
+}
+
+/* Countdown timer */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.countdown-box {
+  background: #fff;
+  color: #333;
+  padding: 15px 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.countdown-box:hover {
+  transform: scale(1.1);
+}
+
+.countdown-number {
+  font-size: 36px;
+  font-weight: 700;
+  display: block;
+  color: #f0a500;
+}
+
+.countdown-label {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Expired message */
+.expired-message {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f00;
+  margin-top: 20px;
+}
+
+/* Sale button */
+.sale-button {
+  background: #f0a500;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sale-button:hover {
+  background: #e08400;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(240, 165, 0, 0.3);
+}
+
+@keyframes title-animate {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes subtitle-animate {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

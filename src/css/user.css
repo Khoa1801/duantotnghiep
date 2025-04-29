@@ -1,0 +1,137 @@
+/* Container tổng */
+.user-management-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #2a2a40;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: #000; /* chữ màu đen */
+}
+
+/* Tiêu đề */
+.section-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+/* Form */
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  color: #000;
+}
+
+.form-input {
+  flex: 1 1 30%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #000;
+  transition: border 0.3s;
+}
+
+.form-input::placeholder {
+  color: #000; /* màu placeholder */
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.submit-btn1 {
+  padding: 10px 24px;
+  background-color: #192ecc;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-left: auto;
+}
+
+/* .submit-btn:hover {
+  background-color: #218838;
+} */
+
+/* Bảng */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  color: #000;
+}
+
+.table-header th {
+  background-color: #2a2a40;
+  padding: 12px;
+  border-bottom: 2px solid #dee2e6;
+  text-align: left;
+  color: #ffffff;
+}
+
+.table-row td {
+  padding: 12px;
+  border-bottom: 1px solid #dee2e6;
+  color: #ffffff;
+}
+
+.table-row:hover {
+  background-color: #ffffff1a;
+}
+
+/* Nút hành động */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  color: #000;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 7px 12px;
+  margin-top: 3px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #fff8f8;
+}
+
+.edit-btn {
+  background-color: #0c7ee8;
+}
+
+
+.delete-btn {
+  background-color: #dc3545;
+  color: #000;
+}
+
+
+.add-user-btn {
+  margin-bottom: 1rem;
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cancel-btn {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

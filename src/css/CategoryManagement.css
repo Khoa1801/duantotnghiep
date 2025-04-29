@@ -1,0 +1,224 @@
+.category-container-2ll {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.category-headerll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.category-headerll h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: whitesmoke;
+  white-space: nowrap;
+}
+
+.btn-addll {
+  padding: 8px 16px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-addll:hover {
+  background-color: #2563eb;
+}
+
+.category-table-wrapperll {
+  background-color: #2a2a40;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.category-tablell {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.category-tablell th,
+.category-tablell td {
+  height: 101px;
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #3f3f5e;
+  vertical-align: middle;
+  color: #e5e7eb;
+}
+
+.category-namell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-btnll {
+  padding: 0.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+
+
+.btnll {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.btnll svg {
+  margin-right: 0.3rem;
+}
+
+.btn-savell {
+  background-color: #22c55e;
+  color: white;
+}
+
+.btn-savell:hover {
+  background-color: #16a34a;
+}
+
+.btn-cancelll {
+  background-color: #6b7280;
+  color: white;
+}
+
+.btn-cancelll:hover {
+  background-color: #4b5563;
+}
+
+.product-listll {
+  margin-top: 2rem;
+  background-color: #2a2a40;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.product-listll ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.product-listll li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #f3f4f6;
+}
+
+.product-listll img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.modal-overlay ll{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalll {
+  background: #2f2f48;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 400px;
+  color: #ffffff;
+}
+
+.modalll input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.75rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #3b3b55;
+  color: #ffffff;
+}
+
+.modal-actionll {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.loadingll,
+.errorll {
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.errorll {
+  color: #f87171;
+}
+/* Nút Lưu */
+.btn-savell {
+  background-color: #22c55e; /* Màu nền ban đầu */
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-savell:hover {
+  background-color: #16a34a; /* Màu nền khi hover */
+  transform: scale(1.03);
+}
+
+/* Nút Sửa */
+.icon-btn.editll {
+  background-color: #0d6efd;
+  color: #ffffff;
+  margin: 0 4px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+/* Nút Xóa */
+.icon-btn.deletell {
+  background-color: #e01111;
+  color: #ffffff;
+  margin: 0 4px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ 
+}
+
+

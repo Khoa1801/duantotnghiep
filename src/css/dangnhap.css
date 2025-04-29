@@ -1,0 +1,167 @@
+/* Cấu trúc chung */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fc;
+    padding: 20px;
+}
+
+.login-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+}
+
+.login-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+.eye-icon:hover {
+    color: #000;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: green;
+    font-size: 12px;
+    margin-top: 5px;
+}
+/* Đặt màu nền cho các nút */
+button.custom-facebook-login,
+button.custom-google-login {
+  width: 100%;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+/* Nút Đăng nhập bằng Facebook */
+.custom-facebook-login {
+  background-color: #3b5998;
+  color: white;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+/* Nút Đăng nhập bằng Google */
+.custom-google-login {
+  background-color: #db4437;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Hiệu ứng khi hover vào các nút */
+button.custom-facebook-login:hover,
+button.custom-google-login:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Đoạn văn Quên mật khẩu */
+.custom-forgot-password {
+  text-align: center;
+  font-size: 14px;
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+.custom-forgot-password:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Responsive: làm cho các nút đẹp trên màn hình di động */
+@media (max-width: 600px) {
+  button.custom-facebook-login,
+  button.custom-google-login {
+    padding: 12px;
+  }
+
+  .custom-forgot-password {
+    font-size: 13px;
+  }
+}
+
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #313436;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #2d2f31;
+}
+
+.login-button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-card {
+        width: 100%;
+        padding: 20px;
+    }
+}

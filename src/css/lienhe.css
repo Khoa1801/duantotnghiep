@@ -1,0 +1,376 @@
+/* lienhe.css */
+
+.contact-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Phần "Về chúng tôi" */
+.about-us-section {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  border-radius: 2px;
+}
+
+.company-overview {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.company-highlight {
+  flex: 2;
+}
+
+.company-highlight h3 {
+  font-size: 1.8rem;
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.company-highlight p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.company-stats {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.stat-item {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.company-details {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.detail-column {
+  flex: 1;
+}
+
+.detail-column h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.detail-column p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.detail-column ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.detail-column li {
+  padding: 10px 0;
+  border-bottom: 1px dashed #ecf0f1;
+  position: relative;
+  padding-left: 25px;
+}
+
+.detail-column li::before {
+  content: '✓';
+  color: #2ecc71;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.contact-info-section {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.contact-info-section h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: #3498db;
+  margin-top: 5px;
+}
+
+.contact-item h4 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.contact-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Giữ nguyên các phần CSS cũ cho form liên hệ */
+.contact-form-container {
+  /* ... (giữ nguyên như cũ) */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .company-overview {
+    flex-direction: column;
+  }
+  
+  .company-details {
+    flex-direction: column;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Form liên hệ - Red Passion Theme */
+.contact-form-container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(255, 65, 108, 0.1);
+  margin-top: 20px;
+  border: 1px solid rgba(255, 65, 108, 0.1);
+}
+
+.contact-form-title {
+  font-size: 2rem;
+  color: #ff1e56;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+  font-weight: 700;
+}
+
+.contact-form-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #ff416c, #ff1e56);
+  border-radius: 2px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px 20px;
+  border: 1px solid #ffecef;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #fff9fa;
+  width: 100%;
+  color: #333;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff416c;
+  box-shadow: 0 0 0 3px rgba(255, 65, 108, 0.2);
+  outline: none;
+  background-color: #fff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #c4a6b1;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.file-input {
+  padding: 12px;
+  border: 2px dashed #ffd6de;
+  background: #fff9fa;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #666;
+}
+
+.file-input:hover {
+  border-color: #ff416c;
+  background: #fff0f3;
+}
+
+.file-input:focus {
+  border-color: #ff416c;
+  box-shadow: 0 0 0 3px rgba(255, 65, 108, 0.2);
+}
+
+.image-preview {
+  margin-top: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(255, 65, 108, 0.1);
+  max-width: 300px;
+  border: 1px solid #ffd6de;
+}
+
+.image-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #ff416c, #ff1e56);
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(255, 65, 108, 0.3);
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #ff1e56, #e01a4e);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 65, 108, 0.4);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.submit-btn:disabled {
+  background: #d1d5db;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Hiệu ứng loading */
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.submit-btn[disabled] {
+  animation: pulse 1.5s infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 30px 20px;
+  }
+  
+  .contact-form-title {
+    font-size: 1.7rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 14px 18px;
+  }
+  
+  .submit-btn {
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+}

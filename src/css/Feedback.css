@@ -1,0 +1,115 @@
+/* Feedback.css */
+
+/* Cấu trúc chung */
+.feedback-container13 {
+    padding: 20px;
+    background-color: #1e1e2f;  /* Nền tối */
+    color: white;  /* Chữ sáng */
+    min-height: 100vh;
+  }
+  
+  .title13 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Bộ lọc sao */
+  .rating-filter13 {
+    margin-bottom: 20px;
+  }
+  
+  .filter-label13 {
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .filter-select13 {
+    padding: 8px;
+    background-color: #2a2a40;  /* Nền xám tối */
+    color: #fff;  /* Chữ sáng */
+    border: 1px solid #444;  /* Viền xám */
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Danh sách phản hồi */
+  .feedback-list13 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .feedback-item13 {
+    background-color: #2a2a40;  /* Nền xám tối */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .feedback-item13:hover {
+    transform: scale(1.03);
+  }
+  
+  .feedback-header13 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .user-info13 {
+    font-weight: bold;
+  }
+  
+  .date13 {
+    font-size: 0.875rem;
+    color: #ccc;  /* Chữ xám sáng */
+  }
+  
+  .feedback-actions13 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .toggle-visibility13, .delete-btn13 {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;  /* Chữ sáng */
+    font-size: 1.25rem;
+  }
+  
+  .toggle-visibility13 {
+    color: #ffcc00;  /* Màu vàng sáng cho biểu tượng ẩn/hiện */
+  }
+  
+  .delete-btn13 {
+    color: #f87171;  /* Màu đỏ cho nút xóa */
+  }
+  
+  .delete-btn13:hover {
+    color: #ff4500;  /* Đỏ đậm hơn khi hover */
+  }
+  
+  .rating13 {
+    margin-bottom: 10px;
+  }
+  
+  .star-rating13 {
+    font-size: 1.25rem;
+    color: #ffcc00;  /* Màu vàng cho đánh giá sao */
+  }
+  
+  .comment13 {
+    font-size: 1rem;
+    color: #ddd;  /* Màu xám sáng cho bình luận */
+  }
+  
+  .no-feedback13 {
+    font-size: 1.2rem;
+    color: #888;  /* Màu xám cho trường hợp không có phản hồi */
+    text-align: center;
+  }
+  

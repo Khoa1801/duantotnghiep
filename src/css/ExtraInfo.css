@@ -1,0 +1,87 @@
+.giao-hang-container {
+  background: #f8f9fa;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom:100px;
+}
+
+.giao-hang-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Hiển thị trên 1 hàng ngang */
+.giao-hang-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Mục chính sách */
+.giao-hang-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  padding: 18px 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(25% - 15px); /* Chia đều 4 cột */
+  min-width: 220px;
+  text-align: left;
+  position: relative;
+}
+
+.giao-hang-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon màu đen */
+.giao-hang-icon {
+  font-size: 2rem;
+  color: #222; /* Màu đen */
+}
+
+/* Tiêu đề */
+.giao-hang-item h3 {
+  font-size: 1rem;
+  margin: 0;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Mô tả */
+.giao-hang-item p {
+  font-size: 0.85rem;
+  margin: 0;
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .giao-hang-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .giao-hang-item {
+    width: calc(50% - 15px); /* Chia 2 cột khi màn hình nhỏ */
+  }
+}
+
+@media (max-width: 768px) {
+  .giao-hang-item {
+    width: 100%; /* Hiển thị 1 cột trên màn hình nhỏ */
+  }
+}

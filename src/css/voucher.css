@@ -1,0 +1,110 @@
+/* VoucherManagement14.css */
+
+.voucher-management14 {
+  padding: 20px;
+  background-color: #1f2937;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.voucher-title14 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.voucher-table-container14 {
+  background-color: #2d3748;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.voucher-table14 {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.voucher-table14 th,
+.voucher-table14 td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #4a5568;
+}
+
+.voucher-table14 th {
+  background-color: #2d3748;
+}
+
+.voucher-table14 tbody tr:hover {
+  background-color: #4a5568;
+}
+
+.action-buttons14 {
+  display: flex;
+  gap: 10px;
+}
+
+.action-button14 {
+  background-color: #0d6efd;
+  color: #ffffff;
+  margin: 0 4px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.action-button141{
+  background-color: #e01111;
+  color: #ffffff;
+  margin: 0 4px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.add-button14 {
+  padding: 8px 16px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-button14:hover {
+  background-color: #38a169;
+}
+
+.voucher-form14 {
+  background-color: #2d3748;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.form-input14 {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #4a5568;
+  background-color: #1a202c;
+  color: white;
+}
+
+.submit-button14 {
+  background-color: #38a169;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button14:hover {
+  background-color: #2f855a;
+}

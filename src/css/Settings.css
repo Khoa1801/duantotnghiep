@@ -1,0 +1,51 @@
+.change-password-container {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .change-password-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .change-password-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .change-password-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .save-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .save-button:hover {
+    background-color: #0056b3;
+  }
+  

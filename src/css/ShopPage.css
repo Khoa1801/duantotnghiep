@@ -1,0 +1,364 @@
+/* 🛍️ Main Shop Container - Red Passion Theme */
+.shop-container {
+  display: flex;
+  background-color: #fff9fa;
+  color: #2d3748;
+  padding: 40px;
+  min-height: 100vh;
+  gap: 40px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* 🎨 Sidebar - Red Filter Panel */
+.shop-sidebar {
+  width: 320px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(255, 65, 108, 0.1);
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  border: 1px solid #ffecef;
+}
+
+.filter-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #ff1e56;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.filter-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff416c, #ff1e56);
+  border-radius: 2px;
+}
+
+.filter-label {
+  font-size: 1rem;
+  margin-top: 20px;
+  display: block;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.search-input-2, .filter-select {
+  width: 100%;
+  padding: 12px 16px;
+  margin-top: 8px;
+  border: 1px solid #ffecef;
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.95rem;
+  background: #fff9fa;
+}
+
+.search-input-2:focus, .filter-select:focus {
+  border-color: #ff416c;
+  box-shadow: 0 0 0 3px rgba(255, 65, 108, 0.2);
+  outline: none;
+  background: #ffffff;
+}
+
+.reset-filter-button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #ff416c, #ff1e56);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 65, 108, 0.25);
+}
+
+.reset-filter-button:hover {
+  background: linear-gradient(135deg, #ff1e56, #e01a4e);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 65, 108, 0.3);
+}
+
+/* ⭐ Featured Products Section */
+.featured-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 30px 0 15px;
+  color: #ff1e56;
+  text-align: left;
+  position: relative;
+}
+
+.featured-products-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.featured-products .shop-item {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 65, 108, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #ffecef;
+}
+
+.featured-products .shop-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 65, 108, 0.15);
+  border-color: #ffd6de;
+}
+
+.featured-products .shop-image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+  border: 1px solid #ffecef;
+}
+
+.featured-products .shop-info {
+  flex: 1;
+}
+
+.featured-products .shop-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: #2d3748;
+}
+
+.featured-products .shop-price {
+  font-size: 0.9rem;
+  color: #ef4444;
+  font-weight: 600;
+}
+
+/* 🛒 Main Product Grid */
+.shop-main {
+  flex: 1;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.shop-item {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(255, 65, 108, 0.1);
+  padding: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  border: 1px solid #ffecef;
+}
+
+.shop-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(255, 65, 108, 0.15);
+  border-color: #ffd6de;
+}
+
+.shop-image-container {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.shop-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.shop-item:hover .shop-image {
+  transform: scale(1.05);
+}
+
+.shop-info-container {
+  padding: 20px;
+}
+
+.shop-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: #1a202c;
+  line-height: 1.4;
+}
+
+.shop-prices {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.shop-price-original {
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  color: #a0aec0;
+}
+
+.shop-price-sale {
+  font-weight: 700;
+  color: #ef4444;
+  font-size: 1.2rem;
+}
+
+/* 🛍️ Add to Cart Button */
+.add-to-cart-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #ff416c, #ff1e56);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 65, 108, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.add-to-cart-button:hover {
+  background: linear-gradient(135deg, #ff1e56, #e01a4e);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 65, 108, 0.4);
+}
+
+.add-to-cart-button:active {
+  transform: translateY(0);
+}
+
+/* 🔢 Pagination - Red Style */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 8px;
+}
+
+.pagination-button {
+  width: 46px;
+  height: 46px;
+  border: none;
+  background: #ffffff;
+  color: #4a5568;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(255, 65, 108, 0.1);
+  border: 1px solid #ffecef;
+}
+
+.pagination-button:hover {
+  background: #fff9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(255, 65, 108, 0.15);
+}
+
+.pagination-button.active {
+  background: linear-gradient(135deg, #ff416c, #ff1e56);
+  color: white;
+  box-shadow: 0 6px 16px rgba(255, 65, 108, 0.3);
+  transform: scale(1.05);
+  border-color: transparent;
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination button:first-child, 
+.pagination button:last-child {
+  width: auto;
+  padding: 0 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff416c, #ff1e56);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(255, 65, 108, 0.25);
+}
+
+.pagination button:first-child:hover, 
+.pagination button:last-child:hover {
+  background: linear-gradient(135deg, #ff1e56, #e01a4e);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 65, 108, 0.35);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+  .shop-container {
+    flex-direction: column;
+    padding: 30px;
+  }
+  
+  .shop-sidebar {
+    width: 100%;
+    position: static;
+    margin-bottom: 40px;
+  }
+  
+  .shop-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-container {
+    padding: 20px;
+  }
+  
+  .shop-image {
+    height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pagination-button {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+  
+  .pagination button:first-child, 
+  .pagination button:last-child {
+    padding: 0 15px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,65 @@
+/* Reset & Global Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-gray-900;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+.header {
+  @apply fixed top-0 left-0 w-full bg-white bg-opacity-80 shadow-md backdrop-blur-lg z-50 flex items-center justify-between px-6 py-4;
+  transition: all 0.3s ease;
+}
+
+.header .nav-links a {
+  @apply text-gray-700 hover:text-black transition-colors;
+}
+
+/* Banner */
+.banner {
+  @apply w-full h-[400px] bg-cover bg-center rounded-lg shadow-md;
+}
+
+/* Buttons */
+.button {
+  @apply px-5 py-2 rounded-lg font-medium transition-all;
+}
+
+.button-primary {
+  @apply bg-black text-white hover:bg-gray-900 shadow-lg;
+}
+
+.button-secondary {
+  @apply bg-gray-200 text-gray-800 hover:bg-gray-300 shadow-md;
+}
+
+/* Product List */
+.product-list {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6;
+}
+
+.product-item {
+  @apply bg-white rounded-lg shadow-lg p-4 hover:scale-105 transition-transform;
+}
+
+.product-item img {
+  @apply rounded-md;
+}
+
+/* Input Fields */
+.input-field {
+  @apply w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-gray-500;
+}
+
+/* Chatbox */
+.chatbox {
+  @apply fixed bottom-4 right-4 bg-white shadow-lg p-4 rounded-lg;
+}
+
+/* Footer */
+.footer {
+  @apply bg-gray-900 text-white py-6 text-center;
+}
