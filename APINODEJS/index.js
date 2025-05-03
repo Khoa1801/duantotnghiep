@@ -37,6 +37,8 @@ app.use("/", vnpayRoute);
 app.use("/momo", momoRouter);
 app.use("/zalo", paymentZaloRouter);
 const util = require('util');
+app.use(express.static(path.join(__dirname, "build")));
+
 
 // Đảm bảo thư mục 'uploads' tồn tại
 const uploadDir = path.join(__dirname, "uploads");
@@ -334,6 +336,12 @@ app.post("/lien_he", upload.single("image"), (req, res) => {
   app.get('/login', (req, res) => {
     res.send('Trang đăng nhập');
 });
+
+// Catch-all route: React entry point
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "build", "index.html"));
+  });
+  
 
  
 app.post('/login', (req, res) => {
